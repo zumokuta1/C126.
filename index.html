@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>App we de identificacion de imagenes en tiempo real</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!--Agregar la clase del fondo al cuerpo del html-->
+<body>
+<center>
+  <!--Agrega la clase btn-primary heading a la etiqueta h3-->
+  <h3 class="heading">App web de identificacion de imagenes en tiempo real
+  </h3>
+    <!--Agrega una línea-->
+    <center>
+      <br>
+      <!--Haz que el div sea receptivo (compatible con diferentes dispositivos)-->
+      <div class="text-info" style="font-size: 2.5rem;">
+        Utilizamos Mobilenet como modelo
+        <br>
+        <!--Agrega la clase btn heading_div2 al div-->
+          <div class="text-info" style="font-size: 2.5rem;">
+          ¡El modelo Mobilenet esta entrenado con mas de 1.3 millones de imagenes!
+          </div>
+        </div>
+    </center>
+    <br>
+  <br><br>
+  <div id="canvas"></div>
+  <br>
+  <br>
+  <!--Agrega la clase al objeto p y span-->
+  <p class="text-danger" style="font-size: 2.5rem;">Objeto: 
+    <span id="result_object_name"></span> 
+  </p>
+  
+  <br><br>
+  <!--Agrega la clase a la precisión p y span-->
+  <p class="text-danger" style="font-size: 2.5rem;">Precision: 
+    <span id="result_object_accuracy"></span> 
+  </p>
+
+</center>
+<br>
+<br>
+<br>
+<div class="copy_right_footer text-center text-warning">
+  Desarrollado por Joel Botero
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
